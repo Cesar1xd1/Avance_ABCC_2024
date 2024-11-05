@@ -1,3 +1,16 @@
+<?php
+    session_start();   
+
+    if(!$_SESSION['valida']==true){
+        header('location: login.php');
+    }
+    
+
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -40,9 +53,14 @@
                 </li>
 -->
             </ul>
-            <form class="form-inline my-2 my-lg-0">
+            <form class="form-inline my-2 my-lg-0" action="../controllers/cerrar_sesion.php" method="POST">
             <!--<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
-                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Login</button>
+                <h3>Bienvenido <?php 
+                    
+                    echo $_SESSION['usuario']. "!";
+                    
+                ?></h3>
+                <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Log out</button>
             </form>
         </div>
     </nav>
