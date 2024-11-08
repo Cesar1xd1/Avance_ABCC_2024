@@ -48,7 +48,7 @@
     //var_dump($datos);
     if(mysqli_num_rows($datos)>0){
         
-        echo'<table class="table table-success table-striped">';
+        echo'<div class="table-responsive"><table class="table table-success table-striped">';
         echo'<thead>
             <tr>
                 <th> Num. Control </th>
@@ -58,9 +58,9 @@
                 <th> Edad </th>
                 <th> Semestre </th>
                 <th> Carrera </th>
-                <th> Acciones </th>
+                <th > Acciones </th>
             </tr>
-            </thead>';
+            </thead> <tbody>';
         
 
     
@@ -92,7 +92,7 @@
             </td>"
             ,$fila['Num_Control']);
         }
-        echo '</table>';
+        echo '</tbody></table></div>';
     }else{
         echo"<h1>Tabla Vacia </h1>";
     }
