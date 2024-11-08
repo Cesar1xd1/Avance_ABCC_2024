@@ -37,5 +37,12 @@ include('../../database/conexion_bd_escuela.php');
             $res = mysqli_query($this->conexion->getConexion(), $sql);
             return $res;
         }
+
+        public function mostrarAlumnosFiltro($filtro){
+            $res = mysqli_query($this->conexion->getConexion(), $filtro);
+            return $res;
+        }
+
+
     }
 ?>

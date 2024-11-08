@@ -11,6 +11,7 @@
 <body>
     <?php
     require_once('menu_principal.php');
+    
     ?>
     <div class="container">
         <br>
@@ -40,7 +41,7 @@
                 <li class="list-group-item">Semestre: <?php echo ($_GET['semestre']);  ?></li>
                 <li class="list-group-item">Carrera: <?php echo ($_GET['carrera']);  ?></li>
             </ul>
-            <a class="btn btn-primary" href="bajas_cambios.php">Volver</a>
+            <a class="btn btn-primary" href="consultas_alumnos.php">Volver</a>
             
         </div>
         <br>

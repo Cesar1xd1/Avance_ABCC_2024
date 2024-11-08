@@ -11,6 +11,7 @@
 <body>
 <?php
         require_once('menu_principal.php');
+       
     ?>
     <div class="container">
     <h2>Agregar Alumno</h1>

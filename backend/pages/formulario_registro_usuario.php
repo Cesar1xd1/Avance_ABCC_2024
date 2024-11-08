@@ -8,18 +8,18 @@
     <title>Document</title>
 </head>
 
-<body class="bg-secondary">
-    <form class="vh-100 gradient-custom" action="../controllers/validar_usuario.php" method="POST">
+<body class="bg-dark">
+    <form class="vh-100 gradient-custom" action="../controllers/procesar_alta_usuario.php" method="POST">
         <div class="container py-5 h-100">
             <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-                    <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                    <div class="card bg-secondary text-white" style="border-radius: 1rem;">
                         <div class="card-body p-5 text-center">
 
                             <div class="mb-md-5 mt-md-4 pb-5">
 
-                                <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
-                                <p class="text-white-50 mb-5">Introduce usuario y contraseña</p>
+                                <h2 class="fw-bold mb-2 text-uppercase">Registro</h2>
+                                <p class="text-white-50 mb-5">Igresa los datos</p>
 
                                 <div data-mdb-input-init class="form-outline form-white mb-4">
                                     <input type="text" id="caja_usuario" name="caja_usuario" class="form-control form-control-lg" placeholder="Usuario" />
@@ -31,14 +31,15 @@
                                     <label class="form-label" for="typePasswordX">Contraseña</label>
                                 </div>
 
+                                <button data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-primary btn-lg px-5" type="submit">Registrar</button>
 
-                                <button data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-primary btn-lg px-5" type="submit">Login</button>
                             </div>
 
                             <div>
-                                <p class="mb-0">No tienes cuenta? <a href="formulario_registro_usuario.php" class="text-white-50 fw-bold"> Registrate</a>
+                                <p class="mb-0">Ya tienes una cuenta? <a href="login.php" class="text-white-50 fw-bold">Ingresa</a>
                                 </p>
                             </div>
+
 
                         </div>
                     </div>

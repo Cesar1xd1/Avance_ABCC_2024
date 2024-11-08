@@ -37,7 +37,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="./bajas_cambios.php">Eliminar/Modificar</a>
+                    <a class="nav-link" href="./consultas_alumnos.php">Eliminar/Modificar</a>
                 </li>
                 <!--
                 <li class="nav-item dropdown">
@@ -57,13 +57,16 @@
             <!--<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
                 <h3>Bienvenido <?php 
                     
-                    echo $_SESSION['usuario']. "!";
+                    
+                    echo $_SESSION['usuario']. "! ‎ ";
                     
                 ?></h3>
                 <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Log out</button>
             </form>
         </div>
     </nav>
+
+    
 </body>
 
 </html>
