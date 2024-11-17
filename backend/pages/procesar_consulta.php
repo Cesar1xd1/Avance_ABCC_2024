@@ -48,7 +48,7 @@
     //var_dump($datos);
     if(mysqli_num_rows($datos)>0){
         
-        echo'<div class="table-responsive"><table class="table table-success table-striped">';
+        echo'<div class="table-responsive" style="overflow-y: scroll; height: 425px;"><table class="table table-success table-striped" style="overflow-y: scroll;">';
         echo'<thead>
             <tr>
                 <th> Num. Control </th>

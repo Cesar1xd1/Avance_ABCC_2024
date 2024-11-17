@@ -18,7 +18,7 @@
             
 
             <div class="row justify-content-center">
-                <div class="col-1">
+                <div class="col-2">
                 <label>Filtro: </label>
                 </div>
             
