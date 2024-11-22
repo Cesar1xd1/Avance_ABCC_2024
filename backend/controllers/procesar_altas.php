@@ -25,7 +25,7 @@
     
     if(!isset($num_control) || empty($num_control) || !is_numeric($num_control) || !ctype_digit($num_control)){
         $dcnc = false;
-        $_SESSION['err_nc'] = true;     
+        $_SESSION['err_nc'] = [empty($num_control),is_numeric($num_control)];     
     }else{
         $dcnc = true;
     } 

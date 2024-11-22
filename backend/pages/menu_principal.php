@@ -4,13 +4,7 @@
     if(!$_SESSION['valida']==true){
         header('location: login.php');
     }
-    
-
-
-
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
